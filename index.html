@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Grid Layout</title>
+    <style>
+        body {
+            background-image: url('your-background-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            opacity: 0.5;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            height: 50vh;
+            padding: 10px;
+        }
+        .comeon {
+            display: grid;
+            grid: 1fr 1fr;
+            gap: 10px;
+            height: 25vh;
+            padding: 10px;
+        }
+        .box {
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: #fff; /* Default font color */
+        }
+        .left-column {
+            background-color: rgba(70, 130, 180, 0.8); /* SteelBlue */
+        }
+        .right-column {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+        .top-right {
+            background-color: rgba(255, 99, 71, 0.8); /* Tomato */
+        }
+        .bottom-right {
+            background-color: rgba(34, 139, 34, 0.8); /* ForestGreen */
+        }
+        
+        .bottom-center {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            background-color: rgb(151, 15, 151); /*Raiden Color*/
+        }
+        .dark-background {
+            color: #fff; /* Light font color for dark backgrounds */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column box dark-background">Left Column</div>
+        <div class="right-column">
+            <div class="box top-right dark-background">Top Right Row</div>
+            <div class="box bottom-right dark-background">Bottom Right Row</div>
+        </div> 
+    </div>
+    <div class="comeon">
+        <div class="bottom-center box dark-background">Bottom Center</div>
+    </div> 
+    
+</body>
+</html>
