@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Grid Layout</title>
-    <style>
-        body {
-            background-image: url('your-background-image.jpg'); /* Replace with your image URL */
-            background-size: cover;
-            opacity: 0.5;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            height: 50vh;
-            padding: 10px;
-        }
-        .comeon {
-            display: grid;
-            grid: 1fr 1fr;
-            gap: 10px;
-            height: 25vh;
-            padding: 10px;
-        }
-        .box {
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            color: #fff; /* Default font color */
-        }
-        .left-column {
-            background-color: rgba(70, 130, 180, 0.8); /* SteelBlue */
-        }
-        .right-column {
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            gap: 10px;
-        }
-        .top-right {
-            background-color: rgba(255, 99, 71, 0.8); /* Tomato */
-        }
-        .bottom-right {
-            background-color: rgba(34, 139, 34, 0.8); /* ForestGreen */
-        }
-        
-        .bottom-center {
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            gap: 10px;
-            background-color: rgb(151, 15, 151); /*Raiden Color*/
-        }
-        .dark-background {
-            color: #fff; /* Light font color for dark backgrounds */
-        }
-    </style>
+    <title>grid layout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="left-column box dark-background">Left Column</div>
-        <div class="right-column">
-            <div class="box top-right dark-background">Top Right Row</div>
-            <div class="box bottom-right dark-background">Bottom Right Row</div>
-        </div> 
+    <div class="grid-container">
+        <div class="item1">
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Info</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="item2">
+            <nav class="main-content">
+                <h4>Things I wanted to accomplish</h4>
+                <ol>
+                    <li>I wanted to create a game and learn more on it so I can create a game that I wanted in the
+                        future.
+                        As I admire people with the same knowledge and skills I have, and them being able to utilize
+                        them is so mezmorizing to acknowledge and I salute to them.</li>
+                    <li>As I go forward in life, I wanted to be financially stable and help out my family and friends in
+                        a time of need. </li>
+                    <li>In the short term of my 20s, If I was not able to get a job and be financially stable. I will be
+                        most likely to go to military
+                        and learn a different of fields in that situation.</li>
+                    <img src="header.jpg" alt="Image of a game Called Stardew Valley">
+                </ol>
+
+            </nav>
+        </div>
+        <div class="item3">
+
+            <nav class="top-right">
+                <h5>Interesting facts about Me</h5>
+                <p>I have play a lot of games, and it fascinates me that games have a similar and/or
+                    surpassing TV-Shows and Movies that we seen today in story telling, plot, and the sense of direction
+                    of the story. My side hobby is to tinkering PCs and similar fields.
+                    As a gamer, I want to stay up to date in latest series of graphics card that is for sale that is in
+                    my budget with high expectation of performance. Back into my high
+                    school days, I was modding a lot of Pokemon games and pu some twists into it. But as more things
+                    consume my time, I could not have time to do it like I used to do.
+                </p>
+            </nav>
+            <nav class="bottom-right">
+                <h7>Website I am calling for my finals </h7>
+                <p>I have not thought about it what name should I be calling it. But I have been thinking that I
+                    should be thinking that it would simple like lore/story of a game
+                    I want to do.
+                </p><img src="Manga.jpg" height="150px" alt="Picture of genshin">
+
+            </nav>
+
+        </div>
+        <div class="item4">
+            <nav class="footer-bottom">
+                <p>
+                    "Learn to trust the journey, even when you do not understant it. Sometimes what you never wanted or
+                    expect turns out to be what you needed the most."
+                    - marcandangel
+                </p>
+
+            </nav>
+        </div>
     </div>
-    <div class="comeon">
-        <div class="bottom-center box dark-background">Bottom Center</div>
-    </div> 
-    
 </body>
+
 </html>

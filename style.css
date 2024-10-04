@@ -1,0 +1,117 @@
+.item1 {grid-area: header;}
+.item2 {grid-area: main;}
+.item3 {grid-area: right;}
+.item4 {grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    ' main main main right right right'
+    'footer footer footer footer footer footer';
+    grid-template-rows: auto 1fr auto;
+    
+    gap: 5px;
+    background-color: rgba(rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255), 0.8);
+    padding: 10px;
+    height: 50vh;
+
+}
+
+.grid-container > div {
+    background-color: rgba(rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255), 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+body {
+    background-image: url(1727497677916.jpg);
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+    background-position: center;
+    background-color: rgb(212, 203, 203);
+    font-family: Arial, sans-serif;
+}
+/* Top Menu */
+.top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+}
+.top-menu ul li {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;    
+}
+.top-menu ul li a:hover {
+    text-decoration: underline;
+}
+/* Main */
+.main-content  {
+    border-radius: 5px;
+    height: 90%;
+    color: #fff;
+    background-color: rgba(95, 158, 160, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.main-content h4 {
+    font-size: 25px;
+}
+.main-content ol {
+    font-size: 20px;
+    text-align: left;
+    line-height: 35px;
+    
+}
+
+/* Right Side */
+.top-right {
+    height: 45%;
+    border-radius: 5px;
+    background-color: rgba(255, 99, 71, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    
+}
+.top-right h5 {
+    font-size: 25px;
+}
+.top-right p {
+    line-height: 32px;
+    font-size: 20px;
+}
+.bottom-right{
+    height: 49%;
+    border-radius: 5px;
+    background-color: rgba(88, 8, 8, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+.bottom-right h7 {
+    font-size: 25px;
+}
+.bottom-right p {
+    line-height: 32px;
+    font-size: 20px;
+}
+    
+
+/* footer */
+.item4 {
+    height: 1%;
+}
+.footer-bottom {
+    border-radius: 5px;
+    background-color: rgba(211, 211, 211, 0.8)
+}
+
+.footer-bottom p {
+    text-align: center;
+    font-size: 30px;
+    font-family:cursive;
+}
